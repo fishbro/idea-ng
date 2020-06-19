@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GallerySectionsComponent } from './gallery-sections/gallery-sections.component';
+import { MarkupsPageComponent } from './markups-page/markups-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GallerySectionsComponent,
+    MarkupsPageComponent
   ],
   imports: [
     BrowserModule,

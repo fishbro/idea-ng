@@ -1,0 +1,36 @@
+@import "src/theme.scss";
+
+.gallery-sections{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .item{
+    width: 100%;
+    margin-top: 1rem;
+
+    a{
+      display: block;
+    }
+
+    .img{
+      width: 100%;
+      padding-bottom: 60%;
+      position: relative;
+    }
+
+    img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title{
+      padding: 1rem;
+      background: $accent-color;
+      color: $text-on-bg;
+      font-size: 1.2rem;
+    }
+  }
+}
