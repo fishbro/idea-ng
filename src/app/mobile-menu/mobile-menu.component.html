@@ -1,0 +1,13 @@
+<button class="menu-opener" (click)="isOpen = !isOpen">
+  <span></span>
+</button>
+<div class="m-menu" *ngIf="isOpen">
+  <ul>
+    <li><a href="#">О компании</a></li>
+    <li><a href="#">Галерея</a></li>
+    <li><a href="#">Материалы</a></li>
+    <li><a href="#">Условия, акции</a></li>
+    <li><a href="#">Комплектующие</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+</div>

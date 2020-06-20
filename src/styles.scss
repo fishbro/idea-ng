@@ -7,6 +7,8 @@ body, html{
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.2rem;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 h1, .h1 { font-size: 2.5rem; }

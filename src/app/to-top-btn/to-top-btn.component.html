@@ -1,0 +1,3 @@
+<div class="to-top" [ngClass]="{stuck: isStuck}" #toTop>
+  <div *ngIf="isScrollToTop" [@inOutAnimation] (click)="scrollToTop()"></div>
+</div>

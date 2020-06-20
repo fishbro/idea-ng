@@ -1,0 +1,50 @@
+@import "src/theme.scss";
+
+.menu-opener{
+  position: relative;
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: none;
+  display: block;
+
+  span, &:before, &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 26px;
+    height: 2px;
+    background: $accent-color;
+    margin-top: -1px;
+    margin-left: -13px;
+  }
+
+  &:before {
+    top: 30.333%;
+  }
+  &:after{
+    top: 69.666%;
+  }
+}
+
+.m-menu{
+  position: fixed;
+  top: 0;
+  right: 100%;
+  z-index: 10;
+  width: $side-width;
+  height: 100vh;
+  padding-top: .75rem;
+  background: #fff;
+
+  ul{
+
+  }
+  a{
+    display: block;
+    padding: 1rem;
+    font-size: $accent-text-size;
+  }
+}

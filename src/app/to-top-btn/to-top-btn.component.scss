@@ -1,0 +1,39 @@
+@import "src/theme.scss";
+
+.to-top{
+  position: relative;
+  width: 100%;
+
+  & > div{
+    position: fixed;
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    background: $accent-transparent-bg-color;
+    bottom: 1rem;
+    right: 1rem;
+    mix-blend-mode: difference;
+
+    &:before{
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-top: 2px solid $accent-color;
+      border-right: 2px solid $accent-color;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: -3px 0 0 -5px;
+    }
+    &:before{
+      transform: rotate(-45deg);
+    }
+  }
+  
+  &.stuck > div{
+    position: absolute;
+    top: -.5rem;
+    right: 0;
+  }
+}
