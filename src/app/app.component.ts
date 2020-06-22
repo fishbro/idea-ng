@@ -7,4 +7,9 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
   title = 'idea-ng'
+	is_shifted: boolean = false;
+
+  toggleMenu(isOpen: boolean): void {
+		this.is_shifted = isOpen;
+	}
 }

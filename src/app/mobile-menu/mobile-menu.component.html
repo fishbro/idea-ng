@@ -1,7 +1,4 @@
-<button class="menu-opener" (click)="isOpen = !isOpen">
-  <span></span>
-</button>
-<div class="m-menu" *ngIf="isOpen">
+<div class="m-menu" *ngIf="isOpen" [@inOutAnimation]>
   <ul>
     <li><a href="#">О компании</a></li>
     <li><a href="#">Галерея</a></li>
@@ -11,3 +8,6 @@
     <li><a href="#">Контакты</a></li>
   </ul>
 </div>
+<button class="menu-opener" (click)="toggleMenu()" [ngClass]="{'is-open': isOpen}">
+  <span></span>
+</button>

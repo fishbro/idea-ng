@@ -19,6 +19,8 @@
     background: $accent-color;
     margin-top: -1px;
     margin-left: -13px;
+
+    transition: all, .5s;
   }
 
   &:before {
@@ -26,6 +28,20 @@
   }
   &:after{
     top: 69.666%;
+  }
+
+  &.is-open{
+    &:before {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    &:after{
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+    span{
+      opacity: 0;
+    }
   }
 }
 
@@ -37,14 +53,15 @@
   width: $side-width;
   height: 100vh;
   padding-top: .75rem;
-  background: #fff;
+  background: $accent-color;
 
   ul{
 
   }
   a{
     display: block;
-    padding: 1rem;
+    padding: 1rem 2rem;
     font-size: $accent-text-size;
+    color: #fff;
   }
 }

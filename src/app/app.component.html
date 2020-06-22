@@ -1,7 +1,7 @@
-<header>
+<header [ngClass]="{shifted: is_shifted}">
   <div class="container">
     <div class="header-wrapper">
-      <app-mobile-menu></app-mobile-menu>
+      <app-mobile-menu (onOpen)="toggleMenu($event)"></app-mobile-menu>
       <div class="logo">
         <a href="/">
           <img src="/assets/images/logo.svg" alt="">
@@ -16,12 +16,12 @@
   </div>
 </header>
 
-<main class="content">
+<main class="content" [ngClass]="{shifted: is_shifted}">
   <app-gallery-sections></app-gallery-sections>
 <!--  <app-markups-page></app-markups-page>-->
 </main>
 
-<footer>
+<footer [ngClass]="{shifted: is_shifted}">
   <app-to-top-btn></app-to-top-btn>
 
   <div class="container">

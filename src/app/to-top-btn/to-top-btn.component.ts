@@ -39,7 +39,7 @@ export class ToTopBtnComponent implements OnInit{
 		return (window.pageYOffset > this.windowHeight/2)
 	}
 	checkIsStuck(parent: HTMLElement): boolean {
-		return ((window.pageYOffset+this.windowHeight) > (this.parentNode.offsetTop+37))
+		return ((window.pageYOffset+this.windowHeight) > (this.parentNode.offsetTop+45))
 	}
 	@HostListener('window:scroll', ['$event'])
 	onScroll(e): void {

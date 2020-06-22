@@ -109,3 +109,22 @@ footer{
     }
   }
 }
+
+header,
+main.content,
+footer{
+  transition: transform .5s;
+
+  .logo{
+    opacity: 1;
+    transition: opacity .5s;
+  }
+
+  &.shifted{
+    transform: translate(78%);
+
+    .logo{
+      opacity: 0;
+    }
+  }
+}
