@@ -46,6 +46,10 @@ export class ToTopBtnComponent implements OnInit{
 		this.isScrollToTop = this.checkScroll()
 		this.isStuck = this.checkIsStuck(this.parentNode)
 	}
+	@HostListener('window:resize', ['$event'])
+	onResize(e): void {
+		this.windowHeight = window.innerHeight
+	}
 	scrollToTop(): void {
 		(function smoothscroll(): void {
 			let currentScroll: number = window.pageYOffset
